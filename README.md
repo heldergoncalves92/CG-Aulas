@@ -22,12 +22,15 @@ Aqui deixo os seguintes guiões-práticos que fui fazendo ao longo do ano.
 
 	Sumário:
 
-		Interactividade em GLUT com rato e teclado. Pop-up menus.
-		Desenho de triângulos em OpenGL. Orientação do triângulo. Culling e  opções de desenho.
+		Interactividade em GLUT com rato e teclado.
+		Pop-up menus.
+		Desenho de triângulos em OpenGL.
+		Orientação do triângulo. 
+		Culling e opções de desenho.
 
 	Exercício:
 
-		Desenhar uma pirâmide à base de triângulos. Interacção com o rato.
+		Desenhar uma pirâmide à base de triângulos. Interacção com o teclado.
 
 
-Projectos feitos no **XCode**. Se utilizas windows basta criares um novo projecto e fazeres os includes necessários.
+Projectos feitos no **XCode**. Se utilizas *Windows* basta criares um novo projecto, copiar o '.cpp' e fazeres os includes necessários.

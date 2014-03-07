@@ -39,7 +39,7 @@ void changeSize(int w, int h) {
 	glMatrixMode(GL_MODELVIEW);
 }
 
-
+//Piramide com Base no plano XOZ e centro da base na origem
 void piramide(float lado,float alt){
     
     glBegin(GL_TRIANGLES);

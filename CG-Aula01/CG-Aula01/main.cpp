@@ -84,12 +84,10 @@ int main(int argc, char **argv) {
     
     
     // pÙr registo de funÁıes aqui
-   
     glutDisplayFunc(renderScene);
-    
-    glutIdleFunc(renderScene);
 	glutReshapeFunc(changeSize);
     
+    glutIdleFunc(renderScene);
     
     // alguns settings para OpenGL
 	glEnable(GL_DEPTH_TEST);
