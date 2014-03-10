@@ -32,5 +32,18 @@ Aqui deixo os seguintes guiões-práticos que fui fazendo ao longo do ano.
 
 		Desenhar uma pirâmide à base de triângulos. Interacção com o teclado.
 
+##Aula 03 - Cilindro e Movimentação de Câmera##
+
+	Sumário:
+
+		Coordenadas polares e esféricas. 
+		Movimentação da câmera em modo explorador e FPS. 
+		Definição de um cilindro.
+
+	Exercício:
+
+		Desenhar um cilindro e implementar o modo explorador.
+
+
 
 Projectos feitos no **XCode**. Se utilizas *Windows* basta criares um novo projecto, copiar o '.cpp' e fazeres os includes necessários.

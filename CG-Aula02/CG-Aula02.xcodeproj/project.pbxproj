@@ -52,7 +52,7 @@
 			children = (
 				2C48F66A18BF3D4200238944 /* OpenGL.framework */,
 				2C48F66818BF3D1800238944 /* GLUT.framework */,
-				2C48F65E18BF3C9E00238944 /* CG-Aula01 */,
+				2C48F65E18BF3C9E00238944 /* CG-Aula02 */,
 				2C48F65D18BF3C9E00238944 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -65,12 +65,13 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		2C48F65E18BF3C9E00238944 /* CG-Aula01 */ = {
+		2C48F65E18BF3C9E00238944 /* CG-Aula02 */ = {
 			isa = PBXGroup;
 			children = (
 				2C48F65F18BF3C9E00238944 /* main.cpp */,
 				2C48F66118BF3C9E00238944 /* CG_Aula01.1 */,
 			);
+			name = "CG-Aula02";
 			path = "CG-Aula01";
 			sourceTree = "<group>";
 		};
