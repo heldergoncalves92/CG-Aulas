@@ -44,6 +44,18 @@ Aqui deixo os seguintes guiões-práticos que fui fazendo ao longo do ano.
 
 		Desenhar um cilindro e implementar o modo explorador.
 
+##Aula 04 - Construção de um cenário 3D##
+
+	Sumário:
+
+		Transformações geométricas.
+		Construção de um cenário 3D recorrendo a transformações geométricas.
+
+	Exercício:
+
+		A batalha d'O Grande Donut.
+
+				
 
 
 Projectos feitos no **XCode**. Se utilizas *Windows* basta criares um novo projecto, copiar o '.cpp' e fazeres os includes necessários.

@@ -56,10 +56,7 @@ void arvore(float tam){
     glTranslatef(0, 0, 0.25*tam);
     glColor3f(0, 0.5, 0);
     glutSolidCone(0.25*tam, 0.75*tam, 20, 10);
-    
-    
-    // glutSolidTeapot(1);
-    
+
     glPopMatrix();
     
 }
