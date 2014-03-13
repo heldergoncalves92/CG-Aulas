@@ -10,7 +10,10 @@
 #include <GLUT/glut.h>
 #include <math.h>
 
-float raio=5,cam_h=0,cam_v=0.5;
+float raio=5, cam_h=0,cam_v=0.5, camh_x=0,camh_y=0;
+float x_tela, y_tela; //Variaveis para guardar posição da tela em que se carrega no rato
+
+int estado_botao=0;
 
 void changeSize(int w, int h) {
     
@@ -43,7 +46,8 @@ void cilindro(float raio, float alt){
 
     glBegin(GL_TRIANGLES);
     for(i=0;i<lados;i++){
-        laux1=laux2;laux2+=angulo;
+        laux1=laux2;
+        laux2+=angulo;
         //Base Superior
         glColor3f(0, 1, 0);
         glVertex3f(0, alt, 0);
@@ -78,7 +82,7 @@ void renderScene(void) {
 	glLoadIdentity();
     
     //Câmera em modo explorador
-	gluLookAt(raio*sin(cam_h)*cos(cam_v),raio*sin(cam_v),raio*cos(cam_h)*cos(cam_v),
+	gluLookAt(raio*sin(cam_h+camh_x)*cos(cam_v+camh_y),raio*sin(cam_v+camh_y),raio*cos(cam_h+camh_x)*cos(cam_v+camh_y),
 		      0.0,0.0,0.0,
 			  0.0f,1.0f,0.0f);
     
@@ -91,6 +95,7 @@ void renderScene(void) {
 	
     glutSwapBuffers();
 }
+
 
 void teclado_normal(unsigned char tecla,int x, int y){
     switch (tecla) {
@@ -131,6 +136,7 @@ void teclado_especial(int tecla,int x, int y){
     glutPostRedisplay();
 }
 
+//Função chamada quando escolhemos 1 opção de 1 menu
 void front_menu(int op){
     switch (op) {
         case 1:
@@ -146,8 +152,41 @@ void front_menu(int op){
             break;
     }
     glutPostRedisplay();
+
 }
 
+void rato(int botao, int estado, int x, int y){
+    if (botao==GLUT_LEFT_BUTTON){
+        if (estado==GLUT_DOWN){
+            estado_botao=1;
+            x_tela=x;
+            y_tela=y;
+        }
+        else{
+            estado_botao=0;
+            cam_v+=camh_y;
+            cam_h+=camh_x;
+            camh_x=0;
+            camh_y=0;
+        }
+    }
+}
+
+void mov_rato(int x, int y){
+    float teste;
+    if(estado_botao){
+        if(x_tela!=x)
+            camh_x= (x_tela-x)*0.007;
+        
+        if(y_tela!=y){
+            teste= (y_tela-y)*0.01;
+            if(teste+cam_v>-M_PI_2 && teste+cam_v<M_PI_2 )
+                camh_y=teste;
+        }
+        
+        glutPostRedisplay();
+    }
+}
 
 int main(int argc, char **argv) {
     
@@ -166,6 +205,8 @@ int main(int argc, char **argv) {
     // funções do teclado e rato
 	glutKeyboardFunc(teclado_normal);
     glutSpecialFunc(teclado_especial);
+    glutMouseFunc(rato);
+    glutMotionFunc(mov_rato);
     
     
     //MENU
@@ -176,7 +217,6 @@ int main(int argc, char **argv) {
     
     glutAttachMenu(GLUT_RIGHT_BUTTON);
 
-    
     // alguns settings para OpenGL
 	glEnable(GL_DEPTH_TEST);
 	glEnable(GL_CULL_FACE);
