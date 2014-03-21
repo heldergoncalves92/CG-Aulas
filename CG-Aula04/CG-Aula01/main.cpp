@@ -120,6 +120,8 @@ void centro(int n_teapot){
     }
     glPopMatrix();
 }
+int times ,timebase, frame=0, fps=0;
+char print[20]="";
 
 void renderScene(void) {
     
@@ -157,6 +159,17 @@ void renderScene(void) {
     cir2++;
     cir1--;
 	// End of frame
+    
+    //Brincadeira para ver o número de FPS, analisado ao pormenor na Aula 5
+    frame++;
+    times=glutGet(GLUT_ELAPSED_TIME);
+    if (times - timebase > 1000) {
+        fps = frame*1000.0/(times-timebase);
+        timebase = times;
+        frame = 0;
+    }
+    sprintf(print, "FPS: %d",fps);
+    glutSetWindowTitle(print);
 	
     glutSwapBuffers();
 }

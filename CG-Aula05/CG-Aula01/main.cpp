@@ -16,6 +16,10 @@
 float raio=5,cam_h=0,cam_v=0.5, n_pontos;
 GLuint buffer[1];
 
+/*int times ,timebase, frame=0, fps=0;
+char print[20]="";*/
+
+
 void changeSize(int w, int h) {
     
 	// Prevent a divide by zero, when window is too short
@@ -44,8 +48,8 @@ void changeSize(int w, int h) {
 }
 
 //Desenho do cilindro no modo imediato
-void cilindro(float raio, float alt){
-    int lados=20, i;
+void cilindro(float raio, float alt, int lados){
+    int i;
     float angulo=2*M_PI/lados, laux1, laux2=0;
     
     glBegin(GL_TRIANGLES);
@@ -78,9 +82,9 @@ void cilindro(float raio, float alt){
 }
 
 //Contrução da VBO do cilindro. Esta função só é chamada uma única vez.
-void cilindroVBO(float raio, float alt){
+void cilindroVBO(float raio, float alt, int lados){
  
-    int lados=20, i=0;
+    int i=0;
     float *vertexB=NULL;
     float angulo=2*M_PI/lados, laux1, laux2=0;
     
@@ -150,10 +154,19 @@ void renderScene(void) {
 
     // pÙr instruÁıes de desenho aqui
     
-    
     desenharVBO();
     
-    
+   /* //Medir FPS (Ainda não sei se funciona direito)
+    frame++;
+    times=glutGet(GLUT_ELAPSED_TIME);
+    if (times - timebase > 1000) {
+        fps = frame*1000.0/(times-timebase);
+        timebase = times;
+        frame = 0; 
+    }
+    sprintf(print, "%d",fps);
+    glutSetWindowTitle(print);*/
+
 	// End of frame
 	
     glutSwapBuffers();
@@ -224,11 +237,12 @@ int main(int argc, char **argv) {
     glutInitWindowPosition(100,100);
     glutInitWindowSize(800,800);
     glutCreateWindow("CG@DI");
-    
+
     
     // pÙr registo de funÁıes aqui
     glutDisplayFunc(renderScene);
 	glutReshapeFunc(changeSize);
+    glutIdleFunc(renderScene);
     
     // funções do teclado e rato
 	glutKeyboardFunc(teclado_normal);
@@ -247,7 +261,7 @@ int main(int argc, char **argv) {
     glewInit();
     
     //Construir VBO || Esta função só é necessária chamar 1 vez
-    cilindroVBO(2, 1);
+    cilindroVBO(2, 1,30);
     
     // alguns settings para OpenGL
 	glEnable(GL_DEPTH_TEST);

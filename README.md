@@ -55,7 +55,17 @@ Aqui deixo os seguintes guiões-práticos que fui fazendo ao longo do ano.
 
 		A batalha d'O Grande Donut.
 
-				
+##Aula 05 - VBO´s / Desempenho##
 
+	Sumário:
+
+		Vertex Buffer Objects
+		Análise de vantangens dos VBOs vs. Modo Imediato
+
+	Exercício:
+
+		Redefinição do desenho do cilindro
+
+		
 
 Projectos feitos no **XCode**. Se utilizas *Windows* basta criares um novo projecto, copiar o '.cpp' e fazeres os includes necessários.
