@@ -11,9 +11,7 @@
 #include <math.h>
 #include <stdlib.h>
 
-float raio=180,cam_h=0,cam_v=0.5, cir1=0,cir2=0;
-
-float camh_x=0,camh_y=0;
+float raio=180,cam_h=0,cam_v=0.5,camh_x=0,camh_y=0, cir1=0,cir2=0;
 float x_tela, y_tela; //Variaveis para guardar posição da tela em que se carrega no rato
 
 int estado_botao=0;
