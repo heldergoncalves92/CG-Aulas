@@ -16,8 +16,9 @@
 float raio=5,cam_h=0,cam_v=0.5, n_pontos;
 GLuint buffer[1];
 
-/*int times ,timebase, frame=0, fps=0;
-char print[20]="";*/
+//Para ver o numero de FPS
+int times ,timebase, frame=0, fps=0;
+char print[20]="";
 
 
 void changeSize(int w, int h) {
@@ -156,7 +157,7 @@ void renderScene(void) {
     
     desenharVBO();
     
-   /* //Medir FPS (Ainda não sei se funciona direito)
+   //Medir FPS (Só dá para ver direito de desligarmos o V-Sync)
     frame++;
     times=glutGet(GLUT_ELAPSED_TIME);
     if (times - timebase > 1000) {
@@ -165,7 +166,7 @@ void renderScene(void) {
         frame = 0; 
     }
     sprintf(print, "%d",fps);
-    glutSetWindowTitle(print);*/
+    glutSetWindowTitle(print);
 
 	// End of frame
 	

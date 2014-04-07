@@ -16,6 +16,10 @@ float x_tela, y_tela; //Variaveis para guardar posição da tela em que se carre
 
 int estado_botao=0;
 
+//Para ver o numero de FPS
+int times ,timebase, frame=0, fps=0;
+char print[20]="";
+
 
 void changeSize(int w, int h) {
     
@@ -43,7 +47,7 @@ void changeSize(int w, int h) {
 }
 
 void arvore(float tam){
-    
+    int x;
     glPushMatrix();
     //A função 'glutSolidCone' desenha o cone deitado. Como este é pretendido a pé usamos o rotate
     glRotatef(-90, 1, 0, 0);
@@ -52,7 +56,21 @@ void arvore(float tam){
     glutSolidCone(0.1*tam, tam, 20, 10);
     
     glTranslatef(0, 0, 0.25*tam);
-    glColor3f(0, 0.5, 0);
+    
+    x=rand()%2;
+    switch (x) {
+        case 0:
+            glColor3f(0, 0.5, 0);
+            break;
+
+        case 1:
+            glColor3f(0.0, 0.6, 0.2);
+            break;
+            
+        default:
+            break;
+    }
+
     glutSolidCone(0.25*tam, 0.75*tam, 20, 10);
 
     glPopMatrix();
@@ -67,7 +85,8 @@ void coloca_arvores(int n_arvores){
         z=rand()%99;
         
         //Caso tenha árvores com coordenadas que coincidem no circulo interior
-        if(x<50 && z<50){
+        //if(x<50 && z<50){
+        if(sqrt(x*x+z*z)<45){
             if(rand()%2==0)
                 x=rand()%49+50;
             else
@@ -120,8 +139,6 @@ void centro(int n_teapot){
     }
     glPopMatrix();
 }
-int times ,timebase, frame=0, fps=0;
-char print[20]="";
 
 void renderScene(void) {
     
@@ -150,7 +167,7 @@ void renderScene(void) {
     glEnd();
     
     //Colocar as arvores
-    coloca_arvores(400);
+    coloca_arvores(500);
     
     //DEsenho da parte central
     centro(15);

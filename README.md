@@ -70,7 +70,7 @@ Aqui deixo os seguintes guiões-práticos que fui fazendo ao longo do ano.
 
 	Sumário:
 
-		Leitura de imagens
+		Leitura de imagens recorrendo à biblioteca *DevIL*
 		Interpretação de imagens como mapas de alturas
 		Construção de terrenos a partir de mapas de alturas
 
@@ -79,5 +79,5 @@ Aqui deixo os seguintes guiões-práticos que fui fazendo ao longo do ano.
 		Reconstruir o terreno do cenário as aulas anteriores utilizando uma grelha regular com um mapa de alturas
 
 
-		
+
 Projectos feitos no **XCode**. Se utilizas *Windows* basta criares um novo projecto, copiar o '.cpp' e fazeres os includes necessários.
