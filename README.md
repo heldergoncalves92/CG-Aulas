@@ -17,6 +17,9 @@ Aqui deixo os seguintes guiões-práticos que fui fazendo ao longo do ano.
 	Exercicio:
 
 		Olá Mundo (versão OpenGL).
+		
+![Resultado da Aula 1](https://github.com/HelderGoncalves92/CG-Aulas/blob/master/CG-Aula01/Resultado/Aula01.png?raw=true "Resultado da Aula 1")
+	
 
 ##Aula 02 - Triângulos e Interactividade##
 
@@ -31,6 +34,8 @@ Aqui deixo os seguintes guiões-práticos que fui fazendo ao longo do ano.
 	Exercício:
 
 		Desenhar uma pirâmide à base de triângulos. Interacção com o teclado.
+		
+![Resultado da Aula 2](https://github.com/HelderGoncalves92/CG-Aulas/blob/master/CG-Aula02/Resultado/Aula2_1.png?raw=true "Resultado da Aula 2")
 
 ##Aula 03 - Cilindro e Movimentação de Câmera##
 
@@ -43,6 +48,8 @@ Aqui deixo os seguintes guiões-práticos que fui fazendo ao longo do ano.
 	Exercício:
 
 		Desenhar um cilindro e implementar o modo explorador.
+		
+![Resultado da Aula 3](https://github.com/HelderGoncalves92/CG-Aulas/blob/master/CG-Aula03/Resultado/Aula3_2.png?raw=true "Resultado da Aula 3")
 
 ##Aula 04 - Construção de um cenário 3D##
 
@@ -54,6 +61,8 @@ Aqui deixo os seguintes guiões-práticos que fui fazendo ao longo do ano.
 	Exercício:
 
 		A batalha d'O Grande Donut.
+		
+![Resultado da Aula 4](https://github.com/HelderGoncalves92/CG-Aulas/blob/master/CG-Aula04/Resultado/Aula4_5.png?raw=true "Resultado da Aula 4")
 
 ##Aula 05 - VBO´s / Desempenho##
 
@@ -65,6 +74,8 @@ Aqui deixo os seguintes guiões-práticos que fui fazendo ao longo do ano.
 	Exercício:
 
 		Redefinição do desenho do cilindro
+
+![Resultado da Aula 5](https://github.com/HelderGoncalves92/CG-Aulas/blob/master/CG-Aula05/Resultado/Aula5_1.png?raw=true "Resultado da Aula 5")
 
 ##Aula 06 - Geração de Terrenos##
 
@@ -78,6 +89,8 @@ Aqui deixo os seguintes guiões-práticos que fui fazendo ao longo do ano.
 
 		Reconstruir o terreno do cenário as aulas anteriores utilizando uma grelha regular com um mapa de alturas
 
+
+![Resultado da Aula 6](https://github.com/HelderGoncalves92/CG-Aulas/blob/master/CG-Aula06/Aula6_3.png?raw=true "Resultado da Aula 6")
 
 
 Projectos feitos no **XCode**. Se utilizas *Windows* basta criares um novo projecto, copiar o '.cpp' e fazeres os includes necessários.
