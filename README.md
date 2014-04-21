@@ -90,7 +90,21 @@ Aqui deixo os seguintes guiões-práticos que fui fazendo ao longo do ano.
 		Reconstruir o terreno do cenário as aulas anteriores utilizando uma grelha regular com um mapa de alturas
 
 
-![Resultado da Aula 6](https://github.com/HelderGoncalves92/CG-Aulas/blob/master/CG-Aula06/Aula6_3.png?raw=true "Resultado da Aula 6")
+![Resultado da Aula 6](https://github.com/HelderGoncalves92/CG-Aulas/blob/master/CG-Aula06/Resultado/Aula6_3.png?raw=true "Resultado da Aula 6")
+
+##Aula 06 - Curvas de Catmull-Rom##
+
+	Sumário:
+
+		Definição de percurso recorrendo a curvas de Catmull-Rom
+		Fórmula Matricial
+
+	Exercício:
+
+		Implementar a função para retornar um ponto de um segmento da curva e desenhar a curva
+
+
+![Resultado da Aula 7](https://github.com/HelderGoncalves92/CG-Aulas/blob/master/CG-Aula07/Resultado/Aula7_1.png?raw=true "Resultado da Aula 7")
 
 
 Projectos feitos no **XCode**. Se utilizas *Windows* basta criares um novo projecto, copiar o '.cpp' e fazeres os includes necessários.
