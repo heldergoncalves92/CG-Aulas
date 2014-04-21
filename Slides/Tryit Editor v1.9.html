@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<!-- saved from url=(0067)http://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_setdate2 -->
+<html lang="en-US"><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Tryit Editor v1.9</title>
+<link rel="stylesheet" type="text/css" href="./Tryit Editor v1.9_files/tryit.css">
+<script async="" type="text/javascript" src="./Tryit Editor v1.9_files/gpt.js"></script><script type="text/javascript" async="" src="./Tryit Editor v1.9_files/dc.js"></script><script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-3855518-1']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+<script type="text/javascript">
+var googletag = googletag || {};
+googletag.cmd = googletag.cmd || [];
+(function() {
+var gads = document.createElement('script');
+gads.async = true;
+gads.type = 'text/javascript';
+var useSSL = 'https:' == document.location.protocol;
+gads.src = (useSSL ? 'https:' : 'http:') + 
+'//www.googletagservices.com/tag/js/gpt.js';
+var node = document.getElementsByTagName('script')[0];
+node.parentNode.insertBefore(gads, node);
+})();
+</script>
+
+<script type="text/javascript">
+googletag.cmd.push(function() {
+googletag.defineSlot('/16833175/TryitLeaderboard', [[728, 90], [970, 90]], 'div-gpt-ad-1383036313516-0').addService(googletag.pubads());
+googletag.pubads().setTargeting("content","tryjs");
+googletag.pubads().enableSingleRequest();
+googletag.enableServices();
+});
+</script>
+
+<script type="text/javascript">
+function submitTryit()
+{
+var t=document.getElementById("textareaCode").value;
+t=t.replace(/=/gi,"w3equalsign");
+var pos=t.search(/script/i)
+while (pos>0)
+	{
+	t=t.substring(0,pos) + "w3" + t.substr(pos,3) + "w3" + t.substr(pos+3,3) + "tag" + t.substr(pos+6);
+	pos=t.search(/script/i);
+	}
+
+t=escape(t);document.getElementById("bt").value="1";
+	
+document.getElementById("code").value=t;
+document.getElementById("tryitform").action="tryit_view.asp?x=" + Math.random();
+validateForm();
+document.getElementById("tryitform").submit();
+}
+function validateForm()
+{
+var code=document.getElementById("code").value;
+if (code.length>5000)
+	{
+	document.getElementById("code").value="<h1>Error</h1>";
+	}
+}
+</script>
+<!--[if lt IE 7]>
+<style>
+#content {height:500px;}
+#sourcecode, #textareaCode, #result, #iframeResult {height:450px;}
+</style>
+<![endif]-->
+<script async="" type="text/javascript" src="http://partner.googleadservices.com/gpt/pubads_impl_37.js"></script><style type="text/css"></style></head>
+<body style="background-color:#e5eecc;">
+
+<div id="ads">
+	<div style="position:relative;width:100%;margin-top:0px;margin-bottom:0px;">
+		<div style="width:974px;height:94px;position:relative;margin:0px;margin-left:auto;margin-right:auto;margin-top:5px;margin-bottom:5px;padding:0px;overflow:hidden;">
+			<!-- TryitLeaderboard -->
+			<div id="div-gpt-ad-1383036313516-0" style="width:970px; height:90px;">
+				<script type="text/javascript">
+				googletag.cmd.push(function() { googletag.display('div-gpt-ad-1383036313516-0'); });
+				</script>
+			</div>
+			<div style="clear:both"></div>
+		</div>
+	</div>
+</div>
+
+<div id="content">
+	<div id="sourcecode">
+		<div class="headerText">Source Code:</div>
+			<input id="submitBTN" type="button" value="Submit Code »" onclick="submitTryit()">
+			<form style="margin:0px" action="./Tryit Editor v1.9_files/tryit_view.html" method="post" target="view" id="tryitform" name="tryitform" onsubmit="validateForm();">
+				
+				<textarea class="code_input" id="textareaCode" wrap="logical" rows="10" cols="50">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+
+&lt;p id="demo"&gt;Click the button to display the date after changing it to be the last day of the previous month.&lt;/p&gt;
+
+&lt;button onclick="myFunction()"&gt;Try it&lt;/button&gt;
+
+&lt;script&gt;
+function myFunction()
+{
+var d = new Date();
+d.setDate(0);
+var x = document.getElementById("demo");
+x.innerHTML=d;
+}
+&lt;/script&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+</textarea>
+				<input type="hidden" name="code" id="code" value="%3C%21DOCTYPE%20html%3E%0A%3Chtml%3E%0A%3Cbody%3E%0A%0A%3Cp%20idw3equalsign%22demo%22%3EClick%20the%20button%20to%20display%20the%20date%20after%20changing%20it%20to%20be%20the%20last%20day%20of%20the%20previous%20month.%3C/p%3E%0A%0A%3Cbutton%20onclickw3equalsign%22myFunction%28%29%22%3ETry%20it%3C/button%3E%0A%0A%3Cw3scrw3ipttag%3E%0Afunction%20myFunction%28%29%0A%7B%0Avar%20d%20w3equalsign%20new%20Date%28%29%2C%20dayw3equalsign1%2Cmesw3equalsign1%2C%20anow3equalsign0%3B%0A%20dayw3equalsignd.getDay%28%29+dia%3B%0Amesw3equalsignd.getMonth%28%29+mes%3B%0Aanow3equalsign%20d.getYear%28%29+ano%3B%0A%0Avar%20x%20w3equalsign%20document.getElementById%28%22demo%22%29%3B%0Ax.innerHTMLw3equalsignday%20+%20mes+%20ano%3B%0A%7D%0A%3C/w3scrw3ipttag%3E%0A%0A%3C/body%3E%0A%3C/html%3E%0A">
+				<input type="hidden" id="bt" name="bt" value="1">
+			</form>
+	</div>
+	<div id="result">
+		<div class="headerText">Result:</div>
+		<div class="headerText" style="right:10px;"><a style="color:#617f10" href="http://www.w3schools.com/">W3Schools.com</a> - Try it yourself&nbsp;</div>	
+		<iframe id="iframeResult" class="result_output" frameborder="0" name="view" src="" width="400"></iframe></div>	
+	<div style="clear:both;"></div>
+	<div id="footer">
+		Edit the code above and click "Submit Code" to see the result.
+	</div>
+</div>
+<script>submitTryit();</script>
+
+</body></html>

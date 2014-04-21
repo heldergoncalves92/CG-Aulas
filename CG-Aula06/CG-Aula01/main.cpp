@@ -12,10 +12,12 @@
 #include <il.h>
 
 float raio=200,cam_h=0.5,cam_v=0.3,camh_x=0,camh_y=0,x_tela, y_tela;
+
+//Angulo de rotação dos centros
 float cir1=0,cir2=0;
 
+//Variaveis para a VBO
 int n_pontos;
-
 GLuint buffer[1];
 
 //Inicializações para carregar a Imagem
@@ -105,8 +107,10 @@ void desenharVBO(){
     glBindBuffer(GL_ARRAY_BUFFER,buffer[0]);
     glVertexPointer(3,GL_FLOAT,0,0);
     glPushMatrix();
+    //Para ser mais facil de desenhar a VBO desenhei a parti de (0,0,0). Agora fazemos o translate para centrar o terreno
     glTranslatef(-(tw/2.0), 0, -(th/2.0));
    
+    //Como estamos a desenhar no modo GL_TRIANGLE_STRIP temos de desenhar uma 'tira' de cada vez
     for (i=0; i<th; i++) {
         glDrawArrays(GL_TRIANGLE_STRIP, i*tw*2, 2*tw);
     }
@@ -154,7 +158,7 @@ void coloca_arvores(int n_arvores){
         z=rand()%tw/2-1;
         
         //Caso tenha árvores com coordenadas que coincidem no circulo interior
-        if(x<50 && z<50){
+        if(sqrt(x*x+z*z)<50){
             if(rand()%2==0)
                 x=rand()%49+50;
             else
@@ -294,10 +298,10 @@ int main(int argc, char **argv) {
     glewInit();
     ilInit();
     
-    //Carregar Imagem
+    //Carregar Imagem e construir a VBO
     carregarImagem();
-    
     construirVBO(th,tw);
+    
     // alguns settings para OpenGL
 	glEnable(GL_DEPTH_TEST);
 	glEnable(GL_CULL_FACE);

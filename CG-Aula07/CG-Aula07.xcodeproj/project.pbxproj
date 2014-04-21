@@ -9,8 +9,11 @@
 /* Begin PBXBuildFile section */
 		2C48F66018BF3C9E00238944 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2C48F65F18BF3C9E00238944 /* main.cpp */; };
 		2C48F66218BF3C9E00238944 /* CG_Aula01.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2C48F66118BF3C9E00238944 /* CG_Aula01.1 */; };
-		2C48F66918BF3D1800238944 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C48F66818BF3D1800238944 /* GLUT.framework */; };
-		2C48F66B18BF3D4200238944 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C48F66A18BF3D4200238944 /* OpenGL.framework */; };
+		2CA30C2118CC23E000D38326 /* libGLEW.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CA30C2018CC23E000D38326 /* libGLEW.dylib */; };
+		2CDC05FA18CC0BAE007FA1E0 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CDC05F918CC0BAE007FA1E0 /* GLUT.framework */; };
+		2CDC05FD18CC0BD7007FA1E0 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CDC05FB18CC0BBD007FA1E0 /* OpenGL.framework */; };
+		2CEA9CB718ED58FC001F189E /* libIL.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CEA9CB618ED58FC001F189E /* libIL.dylib */; };
+		2CEA9CBA18ED9A6B001F189E /* controlos.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2CEA9CB818ED9A6B001F189E /* controlos.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,11 +30,15 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		2C48F65C18BF3C9E00238944 /* CG-Aula04.temp_caseinsensitive_rename */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "CG-Aula04.temp_caseinsensitive_rename"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C48F65C18BF3C9E00238944 /* CG-Aula07 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "CG-Aula07"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C48F65F18BF3C9E00238944 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		2C48F66118BF3C9E00238944 /* CG_Aula01.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = CG_Aula01.1; sourceTree = "<group>"; };
-		2C48F66818BF3D1800238944 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
-		2C48F66A18BF3D4200238944 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		2CA30C2018CC23E000D38326 /* libGLEW.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libGLEW.dylib; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/system/libGLEW.dylib; sourceTree = DEVELOPER_DIR; };
+		2CDC05F918CC0BAE007FA1E0 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/GLUT.framework; sourceTree = DEVELOPER_DIR; };
+		2CDC05FB18CC0BBD007FA1E0 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/OpenGL.framework; sourceTree = DEVELOPER_DIR; };
+		2CEA9CB618ED58FC001F189E /* libIL.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libIL.dylib; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/system/libIL.dylib; sourceTree = DEVELOPER_DIR; };
+		2CEA9CB818ED9A6B001F189E /* controlos.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = controlos.cpp; sourceTree = "<group>"; };
+		2CEA9CB918ED9A6B001F189E /* controlos.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = controlos.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,8 +46,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C48F66B18BF3D4200238944 /* OpenGL.framework in Frameworks */,
-				2C48F66918BF3D1800238944 /* GLUT.framework in Frameworks */,
+				2CEA9CB718ED58FC001F189E /* libIL.dylib in Frameworks */,
+				2CA30C2118CC23E000D38326 /* libGLEW.dylib in Frameworks */,
+				2CDC05FD18CC0BD7007FA1E0 /* OpenGL.framework in Frameworks */,
+				2CDC05FA18CC0BAE007FA1E0 /* GLUT.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,9 +59,11 @@
 		2C48F65318BF3C9E00238944 = {
 			isa = PBXGroup;
 			children = (
-				2C48F66A18BF3D4200238944 /* OpenGL.framework */,
-				2C48F66818BF3D1800238944 /* GLUT.framework */,
-				2C48F65E18BF3C9E00238944 /* CG-Aula04 */,
+				2CEA9CB618ED58FC001F189E /* libIL.dylib */,
+				2CA30C2018CC23E000D38326 /* libGLEW.dylib */,
+				2CDC05FB18CC0BBD007FA1E0 /* OpenGL.framework */,
+				2CDC05F918CC0BAE007FA1E0 /* GLUT.framework */,
+				2C48F65E18BF3C9E00238944 /* CG-Aula07 */,
 				2C48F65D18BF3C9E00238944 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -60,27 +71,29 @@
 		2C48F65D18BF3C9E00238944 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2C48F65C18BF3C9E00238944 /* CG-Aula04.temp_caseinsensitive_rename */,
+				2C48F65C18BF3C9E00238944 /* CG-Aula07 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		2C48F65E18BF3C9E00238944 /* CG-Aula04 */ = {
+		2C48F65E18BF3C9E00238944 /* CG-Aula07 */ = {
 			isa = PBXGroup;
 			children = (
 				2C48F65F18BF3C9E00238944 /* main.cpp */,
 				2C48F66118BF3C9E00238944 /* CG_Aula01.1 */,
+				2CEA9CB818ED9A6B001F189E /* controlos.cpp */,
+				2CEA9CB918ED9A6B001F189E /* controlos.h */,
 			);
-			name = "CG-Aula04";
+			name = "CG-Aula07";
 			path = "CG-Aula01";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2C48F65B18BF3C9E00238944 /* CG-Aula04.temp_caseinsensitive_rename */ = {
+		2C48F65B18BF3C9E00238944 /* CG-Aula07 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2C48F66518BF3C9E00238944 /* Build configuration list for PBXNativeTarget "CG-Aula04.temp_caseinsensitive_rename" */;
+			buildConfigurationList = 2C48F66518BF3C9E00238944 /* Build configuration list for PBXNativeTarget "CG-Aula07" */;
 			buildPhases = (
 				2C48F65818BF3C9E00238944 /* Sources */,
 				2C48F65918BF3C9E00238944 /* Frameworks */,
@@ -90,9 +103,9 @@
 			);
 			dependencies = (
 			);
-			name = "CG-Aula04.temp_caseinsensitive_rename";
+			name = "CG-Aula07";
 			productName = "CG-Aula01";
-			productReference = 2C48F65C18BF3C9E00238944 /* CG-Aula04.temp_caseinsensitive_rename */;
+			productReference = 2C48F65C18BF3C9E00238944 /* CG-Aula07 */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -101,10 +114,10 @@
 		2C48F65418BF3C9E00238944 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0500;
+				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Hélder José Alves Gonçalves";
 			};
-			buildConfigurationList = 2C48F65718BF3C9E00238944 /* Build configuration list for PBXProject "CG-Aula04" */;
+			buildConfigurationList = 2C48F65718BF3C9E00238944 /* Build configuration list for PBXProject "CG-Aula07" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -116,7 +129,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2C48F65B18BF3C9E00238944 /* CG-Aula04.temp_caseinsensitive_rename */,
+				2C48F65B18BF3C9E00238944 /* CG-Aula07 */,
 			);
 		};
 /* End PBXProject section */
@@ -127,6 +140,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C48F66018BF3C9E00238944 /* main.cpp in Sources */,
+				2CEA9CBA18ED9A6B001F189E /* controlos.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,7 +178,15 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					/usr/local/Cellar/devil/1.7.8_1/include/IL/,
+					/usr/local/Cellar/glew/1.10.0/include/GL/,
+				);
+				LIBRARY_SEARCH_PATHS = /usr/local/Cellar/devil/1.7.8_1/lib/;
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				New_Setting = "";
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
 			};
@@ -196,7 +218,15 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					/usr/local/Cellar/devil/1.7.8_1/include/IL/,
+					/usr/local/Cellar/glew/1.10.0/include/GL/,
+				);
+				LIBRARY_SEARCH_PATHS = /usr/local/Cellar/devil/1.7.8_1/lib/;
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				New_Setting = "";
 				SDKROOT = macosx;
 			};
 			name = Release;
@@ -204,9 +234,15 @@
 		2C48F66618BF3C9E00238944 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					/usr/local/Cellar/glew/1.10.0/include/,
+				);
+				LIBRARY_SEARCH_PATHS = "$(SDKROOT)/usr/lib/system";
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
-				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_NAME = "CG-Aula04.temp_caseinsensitive_rename";
+				PRODUCT_NAME = "CG-Aula07";
 				SDKROOT = macosx10.8;
 			};
 			name = Debug;
@@ -214,9 +250,15 @@
 		2C48F66718BF3C9E00238944 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					/usr/local/Cellar/glew/1.10.0/include/,
+				);
+				LIBRARY_SEARCH_PATHS = "$(SDKROOT)/usr/lib/system";
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
-				ONLY_ACTIVE_ARCH = NO;
-				PRODUCT_NAME = "CG-Aula04.temp_caseinsensitive_rename";
+				PRODUCT_NAME = "CG-Aula07";
 				SDKROOT = macosx10.8;
 			};
 			name = Release;
@@ -224,7 +266,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2C48F65718BF3C9E00238944 /* Build configuration list for PBXProject "CG-Aula04" */ = {
+		2C48F65718BF3C9E00238944 /* Build configuration list for PBXProject "CG-Aula07" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2C48F66318BF3C9E00238944 /* Debug */,
@@ -233,7 +275,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2C48F66518BF3C9E00238944 /* Build configuration list for PBXNativeTarget "CG-Aula04.temp_caseinsensitive_rename" */ = {
+		2C48F66518BF3C9E00238944 /* Build configuration list for PBXNativeTarget "CG-Aula07" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2C48F66618BF3C9E00238944 /* Debug */,
