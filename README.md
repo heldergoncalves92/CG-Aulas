@@ -92,7 +92,7 @@ Aqui deixo os seguintes guiões-práticos que fui fazendo ao longo do ano.
 
 ![Resultado da Aula 6](https://github.com/HelderGoncalves92/CG-Aulas/blob/master/CG-Aula06/Resultado/Aula6_3.png?raw=true "Resultado da Aula 6")
 
-##Aula 06 - Curvas de Catmull-Rom##
+##Aula 07 - Curvas de Catmull-Rom##
 
 	Sumário:
 
@@ -103,8 +103,20 @@ Aqui deixo os seguintes guiões-práticos que fui fazendo ao longo do ano.
 
 		Implementar a função para retornar um ponto de um segmento da curva e desenhar a curva
 
-
 ![Resultado da Aula 7](https://github.com/HelderGoncalves92/CG-Aulas/blob/master/CG-Aula07/Resultado/Aula7_1.png?raw=true "Resultado da Aula 7")
+
+##Aula 08 - Iluminação##
+
+	Sumário:
+
+		Definição de normais com e sem VBOs
+		Instruções para activar e definir iluminação em OpenGL
+
+	Exercício:
+
+		Definir normais para o cilindro, adicionar instruções para activar a iluminação
+
+![Resultado da Aula 8](https://github.com/HelderGoncalves92/CG-Aulas/blob/master/CG-Aula08/Resultado/Aula8_1.png?raw=true "Resultado da Aula 8")
 
 
 Projectos feitos no **XCode**. Se utilizas *Windows* basta criares um novo projecto, copiar o '.cpp' e fazeres os includes necessários.

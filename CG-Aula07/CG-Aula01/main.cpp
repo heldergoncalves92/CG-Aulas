@@ -131,7 +131,7 @@ void renderScene(void) {
     // End of frame
 	glutSwapBuffers();
     
-	a+=0.001;
+	a-=0.001;
     
     //Com derivada
     //a+= 0.01/length(derivada);
