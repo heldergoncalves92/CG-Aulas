@@ -118,5 +118,31 @@ Aqui deixo os seguintes guiões-práticos que fui fazendo ao longo do ano.
 
 ![Resultado da Aula 8](https://github.com/HelderGoncalves92/CG-Aulas/blob/master/CG-Aula08/Resultado/Aula8_1.png?raw=true "Resultado da Aula 8")
 
+##Aula 10 - Texturas##
+
+	Sumário:
+
+		Definição de texturas em OpenGL
+		Aplicação de texturas com VBOs
+
+	Exercício:
+
+		Aplicar uma textura ao terreno
+
+![Resultado da Aula 10](https://github.com/HelderGoncalves92/CG-Aulas/blob/master/CG-Aula10/Resultado/Aula10_2.png?raw=true "Resultado da Aula 10")
+
+##Aula 11 - Texturas no Cilindro##
+
+	Sumário:
+
+		Atlas de Texturas
+		Definição de coordenadas de textura para templates
+
+	Exercício:
+
+		Calcular as coordenadas de textura para um cilindro com base num atlas
+
+![Resultado da Aula 11](https://github.com/HelderGoncalves92/CG-Aulas/blob/master/CG-Aula11/Resultado/Aula11_1.png?raw=true "Resultado da Aula 11")
+
 
 Projectos feitos no **XCode**. Se utilizas *Windows* basta criares um novo projecto, copiar o '.cpp' e fazeres os includes necessários.

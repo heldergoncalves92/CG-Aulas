@@ -273,7 +273,6 @@ void mov_rato(int x, int y){
                 camh_y=teste;
         }
         
-        glutPostRedisplay();
     }
 }
 

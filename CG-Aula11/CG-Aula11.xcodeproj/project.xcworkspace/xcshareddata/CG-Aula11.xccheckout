@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>6DC6A093-33D8-41E2-9556-837BCB2A96FB</string>
+	<key>IDESourceControlProjectName</key>
+	<string>CG-Aula11</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>FB85B00A-973A-486A-BFDF-8A21EC1E6241</key>
+		<string>https://github.com/HelderGoncalves92/CG-Aulas.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>CG-Aula11/CG-Aula11.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>FB85B00A-973A-486A-BFDF-8A21EC1E6241</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/HelderGoncalves92/CG-Aulas.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>FB85B00A-973A-486A-BFDF-8A21EC1E6241</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>FB85B00A-973A-486A-BFDF-8A21EC1E6241</string>
+			<key>IDESourceControlWCCName</key>
+			<string>CG-Aulas</string>
+		</dict>
+	</array>
+</dict>
+</plist>

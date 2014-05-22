@@ -37,14 +37,14 @@ void getCatmullRomPoint(float t, int *indices, float *res) {
     
     
     //Sem derivada
-    for (i=0; i<4; i++)
-        res_aux[i]= pow(t,3) * m[0][i] +  pow(t,2) * m[1][i] + t * m[2][i] + m[3][i];
+   // for (i=0; i<4; i++)
+     //   res_aux[i]= pow(t,3) * m[0][i] +  pow(t,2) * m[1][i] + t * m[2][i] + m[3][i];
     
-    /*
+    
     //Com derivada (Esta é a versão para ser utilizada a derivada dos pontos, mas ainda não está concluida)
     for (i=0; i<4; i++)
         res_aux[i]= 3*pow(t,2) * m[0][i] +  2*t * m[1][i] + m[2][i];
-    */
+    
     
     //Calculo do RES
 	for(i=0;i<3;i++){
